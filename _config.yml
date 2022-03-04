@@ -1,0 +1,6 @@
+# Site settings
+title: How I trained a Network to Generate New Pokemons in 3D
+tag_text: How I trained a Network to Generate New Pokemons in 3D
+description: An attempt to create new pokemons using deep generative models
+
+exclude: ["README.md"]
