@@ -105,6 +105,13 @@ Finally, diffusion models, or score-based models, is an architecture that is les
 
 *The score-based model is not doing too badly either*
 
+
+The score-based model does not use a latent vector, so we cannot explore its latent space. On the other hand, we can take a look at its sampling process. From a Gaussian noise, it can create a pokemon by solving a stochastic differential equation using the score function learned by the network.
+
+<img src="images/score_interp.gif" alt="Score model diffusion process">
+*Gradually, the standard deviation of the noise decreases until it becomes a new sample*
+
+
 For now, it's going to be difficult to make my 8-year-old neighbor believe that the big pile of colored cubes I'm showing him is a pokemon, that's for sure. However, despite a mediocre resolution, we recognize things. Deep Learning in 3D is still difficult, but it is an important research topic at the moment. Maybe in the future there will be a time when it will be impossible to "catch them all", because there will be an infinite number of procedurally generated Pokémon.
 
 To improve the result, we would need bigger networks, more data and better data representation. I have also tried to train bigger state of the art models, but without great results. I tried [ProgressiveGAN](https://github.com/tkarras/progressive_growing_of_gans), [NVAE](https://github.com/NVlabs/NVAE) and [LSGM](https://github.com/NVlabs/LSGM) from Nvidia, but there is no point in trying to finetune an architecture that is not suited to the task requested, or to train a complex model on a small dataset
