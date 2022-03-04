@@ -1,6 +1,6 @@
 ## Generating New 3D Voxel Pokemon Using Deep Learning
 
-I generated new pokemons in 3D using GAN, VAE and score-based models. Check out this post to learn more
+I generated new pokemons in 3D using GAN, VAE and score-based models. Check out [this post](https://le-greg.github.io/generate-voxel-pkmns-with-deep-learning/) to learn more
 
 ### Running Experiments
 
@@ -33,7 +33,7 @@ tensorboard               2.7.0
 
 ##### Trainings
 
-Once you data is ready, Modify the parameters in the python scripts, and launch them :
+Once you data is ready, adjust the parameters in the python scripts, and run them :
 ```
 python train_on_basic_gan_16.py
 python train_on_basic_score_32.py
